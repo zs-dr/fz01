@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+					function fz(){
+						 text = document.getElementById('w1').value;
+						 text1 = document.getElementById('w2');
+						 tip = document.getElementById('tip');
+						if(text !== null && text!== ""){
+							text1.value = text;
+							tip.innerHTML = "复制成功！";
+						}
+					}
+				</script>
+	
+	</head>
+	<body>
+		<input type="text" id="w1">
+				<input type="button" value="粘贴复制" onclick="fz()"/>
+				<input type="text" id="w2" >
+				<p id="tip"></p>
+	</body>
+</html>
